@@ -2,8 +2,20 @@
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  background-color: rgba(255,255,255,0.75);
+  border-radius: 10px;
 }
 th {
   text-align: left;
+}
+
+#grandma_says {
+  font-size 200%;
+  color: blue;
+}
+
+body {
+  background-image:url('http://www.learnnc.org/lp/media/uploads/2009/10/iwo_jima1.jpg');
+  background-position: center;
+  background-size: cover;
 }

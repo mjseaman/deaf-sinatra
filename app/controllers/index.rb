@@ -5,5 +5,6 @@ get '/' do
 end
 
 post '/grandma' do
-  "Implement the /grandma route yourself.<br>Params: <code>#{params.inspect}</code>"
+  redirect "/?grandma=#{params["user_input"]}"
+  # "Implement the /grandma route yourself.<br>Params: <code>#{params.inspect}</code>"
 end
