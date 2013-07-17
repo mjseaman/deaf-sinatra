@@ -1,14 +1,9 @@
 <div class="container">
   <h1>Deaf Grandma</h1>
-  <% if @grandma %>
-    <%if @grandma == @grandma.upcase%>
-      <p>Grandma says: "<span id="grandma_says">WHAT? Not since 1945 and the battle of Iwojima!</span>"</p>
-    <%else %>
-      <p>Grandma says: "<span id="grandma_says">What!?!? Speak up my little piglet!</span>"</p>
-    <% end %>
-  <% end %>
 
-  <form action="/grandma" method="post">
+  <p class="response"><span><%=@grandma%></span></p>
+
+  <form action="/" method="post">
     Say something to Grandma:
     <br>
     <input type="text" name="user_input">
